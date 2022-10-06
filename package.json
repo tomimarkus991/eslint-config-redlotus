@@ -49,5 +49,11 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "yarn prettier",
     "*.{md,graphql}": "prettier --list-different"
+  },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
   }
 }
