@@ -1,9 +1,9 @@
 {
   "name": "eslint-config-redlotus",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Red Lotus ESLint config",
-  "main": "src/main.js",
+  "main": "./src/api.js",
   "scripts": {
     "prepare": "husky install",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore",
