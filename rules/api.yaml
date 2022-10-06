@@ -12,6 +12,10 @@ parserOptions:
 settings:
   import/resolver:
     typescript: {}
+plugins:
+  - import
+  - "@typescript-eslint"
+  - prettier
 extends:
   - eslint:recommended
   - plugin:@typescript-eslint/recommended

@@ -1,6 +1,6 @@
 module.exports = {
   extends: {
-    "redlotus-api": require("./rules/api.yaml"),
-    "redlotus-ui": require("./rules/ui.yaml"),
+    api: require("./rules/api.yaml"),
+    ui: require("./rules/ui.yaml"),
   },
 };

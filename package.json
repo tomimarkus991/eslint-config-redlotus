@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Red Lotus ESLint config",
   "main": "src/main.js",
   "scripts": {
@@ -25,7 +25,8 @@
     "eslint-plugin-testing-library": "^5.7.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -42,10 +43,10 @@
     "eslint-plugin-testing-library": "^5.7.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "yarn lint:fix",
     "*.{js,jsx,ts,tsx}": "yarn prettier",
     "*.{md,graphql}": "prettier --list-different"
   }
