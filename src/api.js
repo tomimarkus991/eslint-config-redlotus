@@ -1,1 +1,2 @@
-module.exports = require('../rules/api.yaml');
+// eslint-disable-next-line no-undef
+module.exports = require("../rules/api.yaml");
