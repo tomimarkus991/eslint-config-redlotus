@@ -1,7 +1,7 @@
 {
   "name": "@redlotus/eslint-config-redlotus",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Red Lotus ESLint config",
   "main": "src/main.js",
   "scripts": {
@@ -47,8 +47,8 @@
     "typescript": "^4.8.4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix",
-    "*.{js,jsx,ts,tsx,md,graphql}": "yarn prettier"
+    "*.{js,jsx,ts,tsx,md,graphql}": "yarn prettier",
+    "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix"
   },
   "publishConfig": {
     "access": "public",
