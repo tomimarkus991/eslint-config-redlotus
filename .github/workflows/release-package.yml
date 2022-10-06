@@ -1,4 +1,4 @@
-name: lotusui
+name: eslint-config-redlotus
 on:
   release:
     types: [created]
