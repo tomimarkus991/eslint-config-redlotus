@@ -10,8 +10,7 @@ parserOptions:
     jsx: true
   ecmaVersion: 13
   sourceType: module
-  tsconfigRootDir: .
-  project: ./ui.json
+  project: ../tsconfig-ui.json
 settings:
   react:
     version: detect

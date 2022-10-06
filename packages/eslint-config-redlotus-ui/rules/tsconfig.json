@@ -40,7 +40,7 @@
   ],
   "references": [
     {
-      "path": "./ui.node.json"
+      "path": "./tsconfig.node.json"
     }
   ]
 }

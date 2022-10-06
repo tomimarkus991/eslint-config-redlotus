@@ -1,4 +1,4 @@
-name: eslint-config-redlotus
+name: eslint-config-redlotus-api
 on:
   release:
     types: [created]

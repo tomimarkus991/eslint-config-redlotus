@@ -8,8 +8,7 @@ parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaVersion: 13
   sourceType: module
-  tsconfigRootDir: .
-  project: ./api.json
+  project: "../tsconfig-api.json"
 settings:
   import/resolver:
     typescript: {}

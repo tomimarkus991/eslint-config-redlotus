@@ -1,2 +1,2 @@
 extends:
-  - "./rules/api.yaml"
+  - "./packages/eslint-config-redlotus-api/rules/main"
