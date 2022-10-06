@@ -1,10 +1,11 @@
-# graphifyge
+# eslint-config-redlotus
 
-get started fast with graphql api
+[![npm version](https://badge.fury.io/js/eslint-config-redlotus.svg)](https://badge.fury.io/js/eslint-config-redlotus)
 
-using:
+This package provides Red Lotus's .eslintrc as an extensible shared config.
 
-graphql
-knex
-jest
-graphql-codegen
+## Usage
+
+We export two ESLint configurations for your usage.
+
+Typescript + Node and Typescript + React
