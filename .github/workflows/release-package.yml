@@ -15,7 +15,8 @@ jobs:
           node-version: "14"
           registry-url: https://registry.npmjs.org
       - run: ls
-      - run: cd packages/eslint-config-redlotus-api
+      - run: cd packages
+      - run: cd eslint-config-redlotus-api
       - run: ls
       - run: yarn
       - run: npm publish
@@ -32,7 +33,10 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
-      - run: cd packages/eslint-config-redlotus-ui
+      - run: ls
+      - run: cd packages
+      - run: cd eslint-config-redlotus-ui
+      - run: ls
       - run: yarn
       - run: npm publish
         env:
