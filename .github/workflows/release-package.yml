@@ -16,6 +16,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: ls
       - run: cd packages
+      - run: ls
       - run: cd eslint-config-redlotus-api
       - run: ls
       - run: yarn
