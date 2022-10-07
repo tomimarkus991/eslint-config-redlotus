@@ -1,4 +1,4 @@
-name: eslint-config-redlotus-api
+name: release-packages
 on:
   release:
     types: [created]
@@ -14,7 +14,6 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
-      - run: yarn
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
