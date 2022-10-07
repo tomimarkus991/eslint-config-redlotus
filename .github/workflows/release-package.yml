@@ -3,7 +3,7 @@ on:
   release:
     types: [created]
 jobs:
-  publish-gpr:
+  publish-api:
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -14,6 +14,23 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
+      - run: cd packages/eslint-config-redlotus-api
+      - run: yarn
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  publish-ui:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          registry-url: https://registry.npmjs.org
+      - run: cd packages/eslint-config-redlotus-ui
       - run: yarn
       - run: npm publish
         env:
