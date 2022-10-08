@@ -1,28 +1,32 @@
 name: release-packages
+# on:
+  # push:
+  #   branches:
+  #     - "main"
 on:
-  push:
-    branches:
-      - "main"
+  create:
+    tags:
+      - "v*"
 jobs:
-  # publish-base:
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     packages: write
-  #     contents: read
-  #   env:
-  #     working-directory-base: ./packages/eslint-config-redlotus-base
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: "14"
-  #         registry-url: https://registry.npmjs.org
-  #     - name: api directory
-  #       run: yarn && npm publish
-  #       working-directory: ${{env.working-directory-base}}
+  publish-base:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    env:
+      working-directory-base: ./packages/eslint-config-redlotus-base
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          registry-url: https://registry.npmjs.org
+      - name: api directory
+        run: yarn && npm publish
+        working-directory: ${{env.working-directory-base}}
 
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           
   publish-react:
     runs-on: ubuntu-latest
