@@ -24,6 +24,7 @@
     "noUnusedLocals": true,
     "removeComments": true,
     "strictNullChecks": true,
+    "composite": true,
     "baseUrl": "src"
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],
