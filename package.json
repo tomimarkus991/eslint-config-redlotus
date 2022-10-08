@@ -6,8 +6,7 @@
   "main": "./packages/eslint-config-redlotus-api/main.js",
   "scripts": {
     "prepare": "husky install",
-    "lint:fix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -46,7 +45,6 @@
     "typescript": "^4.8.4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,graphql}": "yarn prettier",
     "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix"
   }
 }

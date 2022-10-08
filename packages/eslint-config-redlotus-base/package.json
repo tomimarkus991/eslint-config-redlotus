@@ -1,12 +1,11 @@
 {
   "name": "eslint-config-redlotus-base",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Red Lotus ESLint config base",
   "main": "./main.js",
   "scripts": {
-    "lint:fix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore"
   },
   "devDependencies": {
     "@types/confusing-browser-globals": ">=1.0.0",
