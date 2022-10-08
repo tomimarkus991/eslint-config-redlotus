@@ -1,12 +1,12 @@
 name: release-packages
-# on:
-  # push:
-  #   branches:
-  #     - "main"
 on:
-  create:
-    tags:
-      - "v*"
+  push:
+    branches:
+      - "main"
+# on:
+#   create:
+#     tags:
+#       - "v*"
 jobs:
   publish-base:
     runs-on: ubuntu-latest
@@ -28,24 +28,24 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           
-  # publish-react:
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     packages: write
-  #     contents: read
-  #   env:
-  #     working-directory-react: ./packages/eslint-config-redlotus-react
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: "14"
-  #         registry-url: https://registry.npmjs.org
-  #     - name: ui directory
-  #       run: yarn && npm publish
-  #       working-directory: ${{env.working-directory-react}}
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  publish-react:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    env:
+      working-directory-react: ./packages/eslint-config-redlotus-react
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          registry-url: https://registry.npmjs.org
+      - name: ui directory
+        run: yarn && npm publish
+        working-directory: ${{env.working-directory-react}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   # publish-api:
   #   runs-on: ubuntu-latest

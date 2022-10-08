@@ -23,6 +23,7 @@ module.exports = {
     "plugin:jest-dom/recommended",
   ],
   rules: {
+    "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-function-return-type": "off",

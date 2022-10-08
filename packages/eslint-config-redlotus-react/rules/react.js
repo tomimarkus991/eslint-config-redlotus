@@ -18,7 +18,6 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
-    "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "jsx-a11y/anchor-is-valid": "off",
