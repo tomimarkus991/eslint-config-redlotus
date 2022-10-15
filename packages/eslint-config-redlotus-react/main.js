@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ["eslint-config-redlotus-base", "./rules/react"].map(require.resolve),
+  extends: ["./rules/react", "eslint-config-redlotus-base"].map(require.resolve),
   rules: {},
 };

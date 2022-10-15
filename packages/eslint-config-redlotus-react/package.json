@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus-react",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Red Lotus ESLint config react",
   "main": "./main.js",
   "scripts": {

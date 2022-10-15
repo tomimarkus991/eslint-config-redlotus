@@ -6,7 +6,7 @@ module.exports = {
     "./rules/es",
     "./rules/imports",
     "./rules/node",
-    "./rules/prettier",
     "./rules/variables",
+    "./rules/prettier",
   ].map(require.resolve),
 };
