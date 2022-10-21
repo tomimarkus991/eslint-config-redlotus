@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "target": "ES2015",
-    "module": "commonjs",
+    "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -29,6 +28,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["packages", "**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "**/*.d.ts"]
+  "include": ["src", "**/*.ts", "global.d.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"]
 }

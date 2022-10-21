@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
-      - name: api directory
-        run: yarn && npm publish
+      - name: base directory
+        run: yarn && yarn build && npm publish
         working-directory: ${{env.working-directory-base}}
 
         env:
@@ -41,8 +41,8 @@ jobs:
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
-      - name: ui directory
-        run: yarn && npm publish
+      - name: react directory
+        run: yarn && yarn build && npm publish
         working-directory: ${{env.working-directory-react}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
