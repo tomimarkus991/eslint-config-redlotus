@@ -1,6 +1,6 @@
 module.exports = {
   // @ts-ignore
-  extends: ["eslint-config-redlotus-base", "./rules/react"].map(require.resolve),
+  extends: ["eslint-config-redlotus-base/dist/main", "./rules/react"].map(require.resolve),
   rules: {},
 };
 
