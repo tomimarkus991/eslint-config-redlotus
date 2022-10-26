@@ -46,23 +46,3 @@ jobs:
   #       working-directory: ${{env.working-directory-react}}
   #       env:
   #         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
-  # publish-api:
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     packages: write
-  #     contents: read
-  #   env:
-  #     working-directory-api: ./packages/eslint-config-redlotus-api
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: "14"
-  #         registry-url: https://registry.npmjs.org
-  #     - name: api directory
-  #       run: yarn && npm publish
-  #       working-directory: ${{env.working-directory-api}}
-
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
