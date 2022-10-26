@@ -704,10 +704,10 @@ eslint-config-prettier@>=8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-config-redlotus-base@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.1.3.tgz#63f3fb09cc6a886c0aa4f05d87b05328ea0ae52b"
-  integrity sha512-um8XeEmqST70lVstug0IrTG5inI7/9YvQHwpolFYTaryZwZi8HqguCb0om4BHdL7EqHwsolBfAF+YXdAUOntQg==
+eslint-config-redlotus-base@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.1.4.tgz#21b01030c453a80c722ac36549d81ced780c43ed"
+  integrity sha512-FkXV7At5x4XY+KjGQW/cIAZKke1uhnS8M1vuvg0upa2t4CIfOHiJLEUcbcLgubx7wJOxpet1PqgWIi17UMCl7Q==
   dependencies:
     "@typescript-eslint/eslint-plugin" ">=5.39.0"
     "@typescript-eslint/parser" ">=5.39.0"
