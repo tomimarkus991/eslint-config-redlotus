@@ -1,15 +1,38 @@
 # eslint-config-redlotus
 
-[![npm version](https://badge.fury.io/js/eslint-config-redlotus.svg)](https://badge.fury.io/js/eslint-config-redlotus)
+![RedLotus-Logo-Dark](.github/base-logo-dark-mode.svg#gh-dark-mode-only)
+![RedLotus-Logo-Light](.github/base-logo-light-mode.svg#gh-light-mode-only)
 
-This package provides Red Lotus's .eslintrc as an extensible shared config.
+Package to standardize eslint across all your projects. **Get a super boost to your development** 🚀
 
-## Usage
+# Quickstart
 
-We export two ESLint configurations for your usage.
+## For react + typescript projects
+    
+    npm i -D eslint-config-redlotus-react
+    
+    yarn add -D eslint-config-redlotus-react
 
-Typescript + Node and Typescript + React
+#### Inside your .eslintrc.yaml add the following:
 
-## Contributing
+    extends:
+        - "./packages/eslint-config-redlotus-react/dist/main"
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+## For node + typescript projects
+    
+    npm i -D eslint-config-redlotus-base
+    
+    yarn add -D eslint-config-redlotus-base
+
+#### Inside your .eslintrc.yaml add the following:
+
+    extends:
+        - "./packages/eslint-config-redlotus-base/dist/main"
+
+---
+
+## License
+
+[MIT](./LICENSE)
+
+Copyright (c) 2022, tomimarkus991
