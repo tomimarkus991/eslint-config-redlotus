@@ -68,5 +68,7 @@ module.exports = {
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/enforces-negative-arbitrary-values": "off",
     "tailwindcss/migration-from-tailwind-2": "off",
+    // remove classnames-order rule, because heybourn.headwind extension will handle it
+    "tailwindcss/classnames-order": "off",
   },
 };
