@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Red Lotus ESLint config",
   "main": "./packages/eslint-config-redlotus-base/main.js",
   "scripts": {
