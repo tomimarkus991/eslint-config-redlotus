@@ -61,6 +61,6 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: next directory
         run: yarn && yarn build && npm publish
-        working-directory: ${{env.working-directory-react}}
+        working-directory: ${{env.working-directory-next}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
