@@ -46,3 +46,21 @@ jobs:
         working-directory: ${{env.working-directory-react}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  publish-next:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    env:
+      working-directory-next: ./packages/eslint-config-redlotus-next
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          registry-url: https://registry.npmjs.org
+      - name: next directory
+        run: yarn && yarn build && npm publish
+        working-directory: ${{env.working-directory-react}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
