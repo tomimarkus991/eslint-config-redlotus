@@ -1,5 +1,8 @@
 module.exports = {
   extends: [
-    "next/core-web-vitals"
+    "next"
   ],
+  rules:{
+    "react/function-component-definition": "off"
+  }
 };
