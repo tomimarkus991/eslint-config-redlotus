@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus-base",
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Red Lotus ESLint config base",
   "main": "./dist/main.js",
   "scripts": {
@@ -9,24 +9,24 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.39.0",
-    "@typescript-eslint/parser": ">=5.39.0",
-    "eslint": ">=8.24.0",
-    "eslint-config-prettier": ">=8.5.0",
-    "eslint-import-resolver-typescript": ">=3.5.1",
-    "eslint-plugin-import": ">=2.26.0",
-    "eslint-plugin-jest-dom": ">=4.0.2",
-    "eslint-plugin-jsx-a11y": ">=6.6.1",
+    "@typescript-eslint/eslint-plugin": ">=5.54.0",
+    "@typescript-eslint/parser": ">=5.54.0",
+    "eslint": ">=8.35.0",
+    "eslint-config-prettier": ">=8.6.0",
+    "eslint-import-resolver-typescript": ">=3.5.3",
+    "eslint-plugin-import": ">=2.27.5",
+    "eslint-plugin-jest-dom": ">=4.0.3",
+    "eslint-plugin-jsx-a11y": ">=6.7.1",
     "eslint-plugin-prettier": ">=4.2.1",
-    "eslint-plugin-testing-library": ">=5.7.2",
-    "prettier": ">=2.7.1"
+    "eslint-plugin-testing-library": ">=5.10.2",
+    "prettier": ">=2.8.4"
   },
   "devDependencies": {
-    "@types/eslint": "^8.4.7",
+    "@types/eslint": "^8.21.1",
     "@types/eslint-config-prettier": "^6.11.0",
     "@types/eslint-plugin-prettier": "^3.1.0",
-    "@types/node": "^18.11.3",
-    "typescript": ">=4.8.4"
+    "@types/node": "^18.14.5",
+    "typescript": ">=4.9.5"
   },
   "publishConfig": {
     "access": "public"
