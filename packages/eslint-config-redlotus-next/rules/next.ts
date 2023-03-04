@@ -4,6 +4,6 @@ module.exports = {
   ],
   rules: {
     "react/function-component-definition": "off",
-    "no-html-link-for-pages": "off",
+    "@next/next/no-html-link-for-pages": "off",
   }
 }
