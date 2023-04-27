@@ -13,21 +13,31 @@ Package to standardize eslint across all your projects. **Get a super boost to y
     
     yarn add -D eslint-config-redlotus-react
 
-#### Inside your .eslintrc.yaml add the following:
-
-    extends:
-        - "./packages/eslint-config-redlotus-react/dist/main"
-
 ## For node + typescript projects
     
     npm i -D eslint-config-redlotus-base
     
     yarn add -D eslint-config-redlotus-base
+    
+## For next projects
+    
+    npm i -D eslint-config-redlotus-next
+    
+    yarn add -D eslint-config-redlotus-next
 
 #### Inside your .eslintrc.yaml add the following:
 
-    extends:
-        - "./packages/eslint-config-redlotus-base/dist/main"
+```
+   extends:
+        - "./eslint-config-redlotus-base/dist/main"
+        or
+   extends:
+        - "./eslint-config-redlotus-react/dist/main"
+      or
+   extends:
+        - "./eslint-config-redlotus-next/dist/main"
+        
+ ```
 
 ---
 
