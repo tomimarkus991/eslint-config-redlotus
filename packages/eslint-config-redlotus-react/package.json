@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus-react",
   "private": false,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Red Lotus ESLint config react",
   "main": "./dist/main.js",
   "scripts": {
@@ -9,15 +9,15 @@
     "build": "tsc"
   },
   "dependencies": {
-    "eslint-config-redlotus-base": "^0.1.6",
-    "eslint-plugin-prettier": ">=4.2.1",
-    "eslint-plugin-react": ">=7.32.2",
-    "eslint-plugin-react-hooks": ">=4.6.0",
-    "eslint-plugin-tailwindcss": ">=3.10.1"
+    "eslint-config-redlotus-base": "^0.1.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.13.0"
   },
   "devDependencies": {
-    "@types/node": "^18.14.5",
-    "typescript": ">=4.9.5"
+    "@types/node": "^20.4.1",
+    "typescript": "^5.1.6"
   },
   "publishConfig": {
     "access": "public"
