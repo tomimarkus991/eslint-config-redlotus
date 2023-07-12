@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-redlotus-base",
   "private": false,
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Red Lotus ESLint config base",
   "main": "./dist/main.js",
   "scripts": {
@@ -15,9 +15,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest-dom": "^5.0.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-testing-library": "^5.11.0",
     "prettier": "^3.0.0"
   },

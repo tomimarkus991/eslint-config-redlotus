@@ -9,6 +9,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@testing-library/dom": "^9.3.1",
     "eslint-config-next": "^13.4.9",
     "eslint-config-redlotus-base": "^0.1.7",
     "eslint-config-redlotus-react": "^0.1.8",

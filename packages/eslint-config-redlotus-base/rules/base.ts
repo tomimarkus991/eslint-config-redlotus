@@ -1,29 +1,28 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
     es2021: true,
     es6: true,
     jest: true,
   },
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 13,
     sourceType: "module",
-    project: "./tsconfig.json",
+    project: true,
     ecmaFeatures: {
       generators: false,
       objectLiteralDuplicateProperties: false,
     },
   },
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest-dom/recommended",
-  ],
+  root: true,
   rules: {
-    "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
+    "linebreak-style": [
+      "error",
+      process.platform === "win32" ? "windows" : "unix",
+    ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-function-return-type": "off",

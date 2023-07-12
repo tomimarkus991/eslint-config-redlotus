@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ["prettier"],
-  extends: ["plugin:prettier/recommended"],
+  extends: ["prettier"],
   rules: {
     "prettier/prettier": [
       "error",
@@ -8,13 +8,17 @@ module.exports = {
         semi: true,
         tabWidth: 2,
         singleQuote: false,
-        trailingComma: "es5",
+        // https://prettier.io/blog/2023/07/05/3.0.0.html#javascript
+        trailingComma: "all",
         arrowParens: "avoid",
         printWidth: 100,
         endOfLine: "auto",
       },
       {
         usePrettierrc: false,
+        fileInfoOptions: {
+          withNodeModules: true
+        }
       },
     ],
   },
