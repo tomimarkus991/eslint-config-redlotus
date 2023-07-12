@@ -35,13 +35,6 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@babel/runtime@^7.16.3":
-  version "7.19.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.4.tgz#a42f814502ee467d55b38dd1c256f53a7b885c78"
-  integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/runtime@^7.20.7":
   version "7.20.13"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
@@ -836,10 +829,10 @@ eslint-config-prettier@^8.8.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
   integrity sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==
 
-eslint-config-redlotus-base@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.1.7.tgz#e8e5168bf3c040a29fae5a394379ca20cd92a3a4"
-  integrity sha512-b1eHMhwk6wzks5hOjw4tGZm+rqYnF1cVqSkt3zH7SnySCZJC2aVQn0I+GjJvm7JSmWNZ1ho/OXzPVART0aV1ig==
+eslint-config-redlotus-base@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.2.0.tgz#8158c22b719d07459d9803fd9bae76a244ca80fb"
+  integrity sha512-/ehYp5xqZ09n2J2rmSzYHCcWpkcrKHom7sK3zF9piIL0QSFqqVImHCu/GAWx+1FLrD2xNs0l1dh9Wd8KvU/jpw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^6.0.0"
     "@typescript-eslint/parser" "^6.0.0"
@@ -847,19 +840,18 @@ eslint-config-redlotus-base@^0.1.7:
     eslint-config-prettier "^8.8.0"
     eslint-import-resolver-typescript "^3.5.5"
     eslint-plugin-import "^2.27.5"
-    eslint-plugin-jest-dom "^5.0.1"
     eslint-plugin-jsx-a11y "^6.7.1"
-    eslint-plugin-prettier "^4.2.1"
+    eslint-plugin-prettier "^5.0.0"
     eslint-plugin-testing-library "^5.11.0"
     prettier "^3.0.0"
 
-eslint-config-redlotus-react@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.1.8.tgz#826d1428c531d2baf380728715aae15d20cc82df"
-  integrity sha512-4o69vS5rmtKDkuy96Vk/IOG/fPkNL0mbCG8uzhqAQnlCzZywqriO8ir2NT/p2uWyoqzloqaGTV1A6alMlQ9NJQ==
+eslint-config-redlotus-react@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.2.0.tgz#57427589bdbdec9d4cc3d07380cc58e72dc2ce37"
+  integrity sha512-ZV1I0PdNjMZUOaN0q5DHt6LHSEEPFxwwi5YkjQQN8h34go5b4cZWXcRZzryXvTZP+Rc+BoWi6TrZi+lfFkzljA==
   dependencies:
-    eslint-config-redlotus-base "^0.1.7"
-    eslint-plugin-prettier "^4.2.1"
+    eslint-config-redlotus-base "^0.2.0"
+    eslint-plugin-prettier "^5.0.0"
     eslint-plugin-react "^7.32.2"
     eslint-plugin-react-hooks "^4.6.0"
     eslint-plugin-tailwindcss "^3.13.0"
@@ -936,14 +928,6 @@ eslint-plugin-import@^2.26.0, eslint-plugin-import@^2.27.5:
     semver "^6.3.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest-dom@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.0.1.tgz#48a0bec664665f206535c87a70d063a05e4189da"
-  integrity sha512-zD/BjNk12R5R9cxIu8oa2HfNeDSknI3ewtN8nygIUMQuieWDnTY9Np//6a1Z3G7Y3dx3l45hCUR4EphsgRmUtA==
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    requireindex "^1.2.0"
-
 eslint-plugin-jsx-a11y@^6.5.1, eslint-plugin-jsx-a11y@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.7.1.tgz#fca5e02d115f48c9a597a6894d5bcec2f7a76976"
@@ -966,12 +950,13 @@ eslint-plugin-jsx-a11y@^6.5.1, eslint-plugin-jsx-a11y@^6.7.1:
     object.fromentries "^2.0.6"
     semver "^6.3.0"
 
-eslint-plugin-prettier@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz#651cbb88b1dab98bfd42f017a12fa6b2d993f94b"
-  integrity sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==
+eslint-plugin-prettier@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.0.0.tgz#6887780ed95f7708340ec79acfdf60c35b9be57a"
+  integrity sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==
   dependencies:
     prettier-linter-helpers "^1.0.0"
+    synckit "^0.8.5"
 
 eslint-plugin-react-hooks@5.0.0-canary-7118f5dd7-20230705:
   version "5.0.0-canary-7118f5dd7-20230705"
@@ -2038,11 +2023,6 @@ regenerator-runtime@^0.13.11:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
   integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
-regenerator-runtime@^0.13.4:
-  version "0.13.10"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
-  integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
-
 regexp.prototype.flags@^1.3.0, regexp.prototype.flags@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.4.3.tgz#87cab30f80f66660181a3bb7bf5981a872b367ac"
@@ -2051,11 +2031,6 @@ regexp.prototype.flags@^1.3.0, regexp.prototype.flags@^1.4.3:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
     functions-have-names "^1.2.2"
-
-requireindex@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
-  integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==
 
 resolve-from@^4.0.0:
   version "4.0.0"
