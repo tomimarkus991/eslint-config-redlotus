@@ -1,2 +1,2 @@
 extends:
-  - "./packages/eslint-config-redlotus-react/dist/main"
+  - "./packages/eslint-config-redlotus-next/dist/main"

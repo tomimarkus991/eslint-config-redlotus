@@ -829,10 +829,10 @@ eslint-config-prettier@^8.8.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
   integrity sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==
 
-eslint-config-redlotus-base@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.2.0.tgz#8158c22b719d07459d9803fd9bae76a244ca80fb"
-  integrity sha512-/ehYp5xqZ09n2J2rmSzYHCcWpkcrKHom7sK3zF9piIL0QSFqqVImHCu/GAWx+1FLrD2xNs0l1dh9Wd8KvU/jpw==
+eslint-config-redlotus-base@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.2.1.tgz#cbd52ef374b732356db5b80afb70370944f9c5c7"
+  integrity sha512-n68Kc44EnbLflynjytXG9pWrK26WLRFk8RJeMolqdpz247LRyE/RU5pjKgvB0s5sr1zoB6dU7GeZaQbZ90z4xw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^6.0.0"
     "@typescript-eslint/parser" "^6.0.0"
@@ -845,12 +845,12 @@ eslint-config-redlotus-base@^0.2.0:
     eslint-plugin-testing-library "^5.11.0"
     prettier "^3.0.0"
 
-eslint-config-redlotus-react@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.2.0.tgz#57427589bdbdec9d4cc3d07380cc58e72dc2ce37"
-  integrity sha512-ZV1I0PdNjMZUOaN0q5DHt6LHSEEPFxwwi5YkjQQN8h34go5b4cZWXcRZzryXvTZP+Rc+BoWi6TrZi+lfFkzljA==
+eslint-config-redlotus-react@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.2.1.tgz#d133dd701714561d608399feaafdf1f6ca389f28"
+  integrity sha512-NUPmvH/tOQcyBQ9sLTQ/jj75KdvRA8beKfQtjxezO/rbdvQEwBBDNgnBXN3C4jzCu2yis5U225stu99F6PNkyw==
   dependencies:
-    eslint-config-redlotus-base "^0.2.0"
+    eslint-config-redlotus-base "^0.2.1"
     eslint-plugin-prettier "^5.0.0"
     eslint-plugin-react "^7.32.2"
     eslint-plugin-react-hooks "^4.6.0"

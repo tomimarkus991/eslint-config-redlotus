@@ -10,7 +10,8 @@ export * from "@testing-library/dom";
 module.exports = {
   extends: [
     "eslint-config-redlotus-base/dist/main",
-    "eslint-config-redlotus-react/dist/main",
+    // "eslint-config-redlotus-react/dist/main",
+    "./rules/react",
     "./rules/next"
     // @ts-ignore
 ].map(require.resolve),
