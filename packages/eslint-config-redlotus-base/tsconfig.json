@@ -27,6 +27,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["src", "**/*.ts", "global.d.ts", "main.js"],
+  "include": ["src", "**/*.ts", "global.d.ts", "main.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"]
 }
