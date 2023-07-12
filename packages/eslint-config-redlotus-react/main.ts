@@ -3,6 +3,8 @@ export * from "eslint-plugin-react";
 export * from "eslint-plugin-react-hooks";
 export * from "eslint-plugin-tailwindcss";
 export * from "eslint-plugin-prettier";
+export * from "eslint-plugin-jsx-a11y";
+export * from "eslint-plugin-testing-library";
 
 module.exports = {
   // @ts-ignore
